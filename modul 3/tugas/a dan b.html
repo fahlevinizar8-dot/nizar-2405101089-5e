@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Perpustakaan Kota Madiun</title>
+</head>
+<body>
+
+    <h2>Formulir Pendaftaran Anggota Perpustakaan Kota Madiun</h2>
+
+    <form action="proses_perpus.php" method="post">
+        <p>
+            <label for="nomor_ktp">Nomor KTP / NISN:</label><br>
+            <input type="text" id="nomor_ktp" name="nomor_ktp" placeholder="Masukkan No KTP/NISN">
+        </p>
+
+        <p>
+            <label for="nama_lengkap">Nama Lengkap:</label><br>
+            <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Masukkan Nama Lengkap">
+        </p>
+
+        <p>
+            <label for="password">Password Akun:</label><br>
+            <input type="password" id="password" name="password">
+        </p>
+
+        <p>
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="jk_laki" name="jenis_kelamin" value="Laki-laki" checked>
+            <label for="jk_laki">Laki-Laki</label>
+            
+            <input type="radio" id="jk_perempuan" name="jenis_kelamin" value="Perempuan">
+            <label for="jk_perempuan">Perempuan</label>
+        </p>
+
+        <p>
+            <label for="kategori_anggota">Kategori Anggota:</label><br>
+            <select id="kategori_anggota" name="kategori_anggota">
+                <option value="Pelajar/Mahasiswa">Pelajar / Mahasiswa</option>
+                <option value="Umum">Umum</option>
+                <option value="PNS/Guru">PNS / Guru</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Kategori Buku Favorit:</label><br>
+            <input type="checkbox" id="kategori_fiksi" name="hobi_fiksi" value="Fiksi">
+            <label for="kategori_fiksi">Fiksi / Novel</label>
+
+            <input type="checkbox" id="kategori_sejarah" name="hobi_sejarah" value="Sejarah">
+            <label for="kategori_sejarah">Sejarah</label>
+
+            <input type="checkbox" id="kategori_sains" name="hobi_sains" value="Sains">
+            <label for="kategori_sains">Sains & Teknologi</label>
+        </p>
+
+        <p>
+            <label for="alamat">Alamat Lengkap:</label><br>
+            <textarea id="alamat" name="alamat" rows="4" cols="40" placeholder="Tuliskan alamat rumah..."></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Daftar Anggota">
+        </p>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran Pasien - Klinik Sehat</title>
+</head>
+<body>
+
+    <h2>Formulir Pendaftaran Pasien Klinik Sehat</h2>
+
+    <form action="proses_klinik.php" method="post">
+        <p>
+            <label for="nama_pasien">Nama Pasien:</label><br>
+            <input type="text" id="nama_pasien" name="nama_pasien" placeholder="Masukkan nama pasien">
+        </p>
+
+        <p>
+            <label for="pin">PIN Keamanan (Password):</label><br>
+            <input type="password" id="pin" name="pin" placeholder="Masukkan 6 angka PIN">
+        </p>
+
+        <p>
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="jk_pria" name="jenis_kelamin" value="Laki-laki" checked>
+            <label for="jk_pria">Laki-Laki</label>
+            
+            <input type="radio" id="jk_wanita" name="jenis_kelamin" value="Perempuan">
+            <label for="jk_wanita">Perempuan</label>
+        </p>
+
+        <p>
+            <label for="poli_tujuan">Poli Tujuan:</label><br>
+            <select id="poli_tujuan" name="poli_tujuan">
+                <option value="Poli Umum">Poli Umum</option>
+                <option value="Poli Gigi">Poli Gigi</option>
+                <option value="Poli Anak">Poli Anak</option>
+                <option value="Poli Mata">Poli Mata</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Riwayat Alergi:</label><br>
+            <input type="checkbox" id="alergi_obat" name="alergi_obat" value="Obat">
+            <label for="alergi_obat">Alergi Obat</label>
+
+            <input type="checkbox" id="alergi_makanan" name="alergi_makanan" value="Makanan">
+            <label for="alergi_makanan">Alergi Makanan</label>
+
+            <input type="checkbox" id="tidak_ada" name="tidak_ada_alergi" value="Tidak Ada" checked>
+            <label for="tidak_ada">Tidak Ada Alergi</label>
+        </p>
+
+        <p>
+            <label for="keluhan">Keluhan Utama / Catatan Dokter:</label><br>
+            <textarea id="keluhan" name="keluhan" rows="4" cols="40" placeholder="Tuliskan keluhan yang dirasakan..."></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Kirim Pendaftaran">
+        </p>
+    </form>
+
+</body>
+</html>
